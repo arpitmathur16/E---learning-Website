@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Your Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1><i class="fas fa-graduation-cap"></i> EduLearn</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#statistics">Statistics</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://cdn.pixabay.com/vimeo/328831305/student-25668.mp4?width=1280&hash=c4c5e8c8e0a76b7c607c0c8e8d7f5eb2c6a7a3c6" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="animate-title">Transform Your Future with Online Learning</h1>
+            <p class="animate-text">Access quality education from anywhere in the world</p>
+            <div class="hero-buttons">
+                <button class="cta-btn primary">Get Started</button>
+                <button class="cta-btn secondary">Watch Demo</button>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="stat-item tilt-card">
+            <i class="fas fa-users"></i>
+            <span class="counter" data-target="50000">0</span>
+            <p>Students</p>
+        </div>
+        <div class="stat-item tilt-card">
+            <i class="fas fa-book-open"></i>
+            <span class="counter" data-target="100">0</span>
+            <p>Courses</p>
+        </div>
+        <div class="stat-item tilt-card">
+            <i class="fas fa-award"></i>
+            <span class="counter" data-target="25000">0</span>
+            <p>Graduates</p>
+        </div>
+    </section>
+
+    <!-- Featured Courses -->
+    <section id="courses" class="courses">
+        <h2 class="section-title">Featured Courses</h2>
+        <div class="course-grid">
+            <div class="course-card tilt-card">
+                <a href="https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=gtVBg1l0EmSzfMlA" target="_blank" class="card-link">
+                    <div class="card-content">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Web Development">
+                        </div>
+                        <h3>Web Development</h3>
+                        <p>Learn modern web development techniques</p>
+                        <div class="course-stats">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-graph">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path class="circle" stroke-dasharray="85, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <text x="18" y="20.35" class="percentage">85%</text>
+                                        </svg>
+                                        <span class="stat-label">Completion Rate</span>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-bar">
+                                        <div class="bar-graph" style="--rating: 92%">
+                                            <div class="bar-fill"></div>
+                                        </div>
+                                        <span class="stat-value">4.8<small>/5</small></span>
+                                        <span class="stat-label">Student Rating</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="enrollment-trend">
+                                <div class="trend-line">
+                                    <svg viewBox="0 0 100 30" class="trend-graph">
+                                        <polyline points="0,25 20,20 40,22 60,15 80,10 100,5" class="trend-path"/>
+                                    </svg>
+                                </div>
+                                <div class="trend-info">
+                                    <span class="trend-value">1,200+</span>
+                                    <span class="trend-label">Active Students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 12 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="course-card tilt-card">
+                <a href="https://youtu.be/-ETQ97mXXF0?si=S3_H26N83N2nUR9x" target="_blank" class="card-link">
+                    <div class="card-content">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg" alt="Data Science">
+                        </div>
+                        <h3>Data Science</h3>
+                        <p>Master data analysis and visualization</p>
+                        <div class="course-stats">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-graph">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path class="circle" stroke-dasharray="78, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <text x="18" y="20.35" class="percentage">78%</text>
+                                        </svg>
+                                        <span class="stat-label">Completion Rate</span>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-bar">
+                                        <div class="bar-graph" style="--rating: 88%">
+                                            <div class="bar-fill"></div>
+                                        </div>
+                                        <span class="stat-value">4.9<small>/5</small></span>
+                                        <span class="stat-label">Student Rating</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="enrollment-trend">
+                                <div class="trend-line">
+                                    <svg viewBox="0 0 100 30" class="trend-graph">
+                                        <polyline points="0,25 20,18 40,20 60,12 80,8 100,5" class="trend-path"/>
+                                    </svg>
+                                </div>
+                                <div class="trend-info">
+                                    <span class="trend-value">950+</span>
+                                    <span class="trend-label">Active Students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 16 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="course-card tilt-card">
+                <a href="https://youtu.be/kunkYTKFNtI?si=DwnUsRu2PComoLzH" target="_blank" class="card-link">
+                    <div class="card-content">
+                        <div class="card-image-wrapper">
+                            <img src="https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg" alt="Digital Marketing">
+                        </div>
+                        <h3>Digital Marketing</h3>
+                        <p>Learn effective online marketing strategies</p>
+                        <div class="course-stats">
+                            <div class="stats-grid">
+                                <div class="stat-card">
+                                    <div class="stat-graph">
+                                        <svg viewBox="0 0 36 36" class="circular-chart">
+                                            <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <path class="circle" stroke-dasharray="92, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                                            <text x="18" y="20.35" class="percentage">92%</text>
+                                        </svg>
+                                        <span class="stat-label">Completion Rate</span>
+                                    </div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-bar">
+                                        <div class="bar-graph" style="--rating: 95%">
+                                            <div class="bar-fill"></div>
+                                        </div>
+                                        <span class="stat-value">4.7<small>/5</small></span>
+                                        <span class="stat-label">Student Rating</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="enrollment-trend">
+                                <div class="trend-line">
+                                    <svg viewBox="0 0 100 30" class="trend-graph">
+                                        <polyline points="0,20 20,18 40,15 60,10 80,5 100,2" class="trend-path"/>
+                                    </svg>
+                                </div>
+                                <div class="trend-info">
+                                    <span class="trend-value">1,500+</span>
+                                    <span class="trend-label">Active Students</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-info">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry professionals</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>Flexible Learning</h3>
+                <p>Study at your own pace</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-certificate"></i>
+                <h3>Certification</h3>
+                <p>Get certified upon completion</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About EduLearn</h3>
+                <p>Empowering learners worldwide with quality education</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> info@edulearn.com</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Learning City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
